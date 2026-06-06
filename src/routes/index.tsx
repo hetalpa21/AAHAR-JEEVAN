@@ -14,7 +14,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useStore } from "@/lib/store";
 import { toast } from "sonner";
-import logo from "@/assets/logo.png";
+import logoAsset from "@/assets/logo.jpg.asset.json";
+const logo = logoAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -56,10 +57,7 @@ function Index() {
     <div className="min-h-screen bg-background">
       <AppHeader />
       <main className="mx-auto flex max-w-5xl flex-col items-center px-4 py-12 sm:py-16">
-        <img src={logo} alt="Aahar Jeevan" width={160} height={160} className="h-32 w-32 sm:h-40 sm:w-40" />
-        <h1 className="mt-4 text-center font-serif text-4xl font-bold tracking-wide text-[var(--dark-green)] sm:text-5xl">
-          AAHAR JEEVAN
-        </h1>
+        <img src={logo} alt="Aahar Jeevan" width={320} height={320} className="h-56 w-56 object-contain sm:h-72 sm:w-72" />
         <div className="mt-10 grid w-full max-w-3xl gap-4 sm:grid-cols-2">
           <CTA
             title="Existing Patient"

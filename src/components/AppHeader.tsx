@@ -1,6 +1,7 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { ExternalLink } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logoAsset from "@/assets/logo.jpg.asset.json";
+const logo = logoAsset.url;
 
 export function AppHeader() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -9,11 +10,8 @@ export function AppHeader() {
   return (
     <header className="sticky top-0 z-30 border-b border-border bg-[var(--header-bg)] backdrop-blur print:hidden">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
-        <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="Aahar Jeevan" width={36} height={36} className="h-9 w-9" />
-          <span className="hidden font-serif text-lg font-bold leading-none text-[var(--dark-green)] sm:inline">
-            AAHAR<br />JEEVAN
-          </span>
+        <Link to="/" className="flex items-center gap-2" aria-label="Aahar Jeevan home">
+          <img src={logo} alt="Aahar Jeevan" width={44} height={44} className="h-11 w-11 rounded-md object-contain" />
         </Link>
         <nav className="flex items-center gap-1 sm:gap-2">
           <NavLink to="/" label="Home" active={isDash} />
