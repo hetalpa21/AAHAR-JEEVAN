@@ -1,6 +1,6 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { ExternalLink } from "lucide-react";
-import logoAsset from "@/assets/logo.jpg.asset.json";
+import logoAsset from "@/assets/logo.png.asset.json";
 const logo = logoAsset.url;
 
 export function AppHeader() {
