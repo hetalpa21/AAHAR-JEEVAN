@@ -297,7 +297,7 @@ function Planner() {
 
             <div className="print-patient">
               <div><span className="print-label">Name:</span> <span className="print-value">{patient.name}</span></div>
-              <div><span className="print-label">Current Weight:</span> <span className="print-value">{patient.weight ?? "—"} kg</span></div>
+              <div><span className="print-label">Current Weight:</span> <span className="print-value">{patient.currentWeight ?? "—"} kg</span></div>
               <div><span className="print-label">Ideal Body Weight:</span> <span className="print-value">{patient.idealWeight ?? "—"} kg</span></div>
               <div><span className="print-label">BMI:</span> <span className="print-value">{patient.bmi ?? "—"}{patient.bmi ? " (±5)" : ""}</span></div>
             </div>
