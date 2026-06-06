@@ -24,7 +24,7 @@ import {
 } from "@/lib/types";
 import { Home, Plus, Search, Trash2, Pencil, Copy, X, Printer } from "lucide-react";
 import { toast } from "sonner";
-import logoAsset from "@/assets/logo.jpg.asset.json";
+import logoAsset from "@/assets/logo.png.asset.json";
 const logo = logoAsset.url;
 import { FoodDialog } from "./catalogue";
 
