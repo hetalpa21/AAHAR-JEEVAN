@@ -136,11 +136,7 @@ function Planner() {
   }
 
   function goHome() {
-    if (dirty) {
-      setConfirm(() => () => navigate({ to: "/" }));
-    } else {
-      navigate({ to: "/" });
-    }
+    navigate({ to: "/" });
   }
 
   function exportPDF() {
