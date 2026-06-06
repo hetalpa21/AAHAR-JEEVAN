@@ -24,7 +24,8 @@ import {
 } from "@/lib/types";
 import { Home, Plus, Search, Trash2, Pencil, Copy, X, Printer } from "lucide-react";
 import { toast } from "sonner";
-import logo from "@/assets/logo.png";
+import logoAsset from "@/assets/logo.jpg.asset.json";
+const logo = logoAsset.url;
 import { FoodDialog } from "./catalogue";
 
 export const Route = createFileRoute("/planner/$patientId")({
@@ -162,7 +163,7 @@ function Planner() {
       <header className="sticky top-0 z-30 border-b border-border bg-[var(--header-bg)] print:hidden">
         <div className="mx-auto flex h-16 max-w-[1600px] items-center justify-between gap-3 px-4 sm:px-6">
           <button onClick={goHome} className="flex items-center gap-2 rounded-md px-2 py-1 text-[var(--dark-green)] hover:bg-muted">
-            <img src={logo} alt="" width={28} height={28} className="h-7 w-7" />
+            <img src={logo} alt="" width={32} height={32} className="h-8 w-8 rounded object-contain" />
             <Home className="h-4 w-4" />
             <span className="font-medium">Home</span>
           </button>
