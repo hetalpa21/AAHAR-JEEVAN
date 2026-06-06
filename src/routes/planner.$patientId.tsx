@@ -49,7 +49,7 @@ function Planner() {
   const [day, setDay] = useState<DayKey>("Mon");
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState<string>("All");
-  const [confirm, setConfirm] = useState<null | (() => void)>(null);
+  
   const [foodDialog, setFoodDialog] = useState<{ open: boolean; food: FoodItem | null }>({ open: false, food: null });
   // Re-init plan when store hydrates
   const didInit = useRef(false);
