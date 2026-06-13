@@ -627,7 +627,48 @@ function Planner() {
           </div>
         ))}
 
-        <div className="print-footer">Prepared by Shobhana Thakkar · Aahar Jeevan · 9687491796</div>
+        <div style={{ pageBreakBefore: "always", paddingTop: "40px" }}>
+          <h2 className="text-center text-xl font-bold text-[#0070c0] mb-6 tracking-wide">TIPS:</h2>
+          
+          <ul className="list-disc pl-8 mb-10 space-y-2 text-[15px] marker:text-black">
+            <li className="text-[#c00000] font-bold marker:text-[#c00000]">
+              7 hrs. Sleep, Stress free life, Exercise help to live a happy and healthy life.
+            </li>
+            <li>
+              Vegetables include carrots, cucumber, green peppers, Broccoli, cauliflower, Cabbage, lettuce, mushrooms, onions, red peppers, tomatoes, beetroot, peas, celery, chili, garlic, basil, coriander, parsley, etc.
+            </li>
+            <li>
+              Drink at least 4 liters of water per day, (Make sure Urine color should be pale yellow).
+            </li>
+            <li>
+              Make sure don't consume more than the mentioned quantity.
+            </li>
+            <li>
+              Daily 45 mins any exercise (5 days in a week).
+            </li>
+          </ul>
+
+          <h2 className="text-2xl font-bold text-[#c00000] mb-6">Avoid List</h2>
+          
+          <div className="space-y-3 pl-2 text-[15px]">
+            <div className="text-[#c00000] font-bold">☐ Wheat, Sugar & Maida completely.</div>
+            <div className="text-[#c00000] font-bold">☐ Simple sugar, jaggery & honey</div>
+            <div className="text-[#c00000] font-bold">☐ Package food like chips, biscuits or any snacks</div>
+            
+            <div>☐ Home Fried food like puri, samosa, pakoda etc.</div>
+            <div>☐ Processed food & trans-fat.</div>
+            <div>☐ Pre made snacks like shukadi.....etc.</div>
+            <div>☐ Outside unhealthy snacks like panipuri, pav bhaji, pizza, burger etc.</div>
+            <div>☐ Bakery items like breads, cake, biscuits etc.</div>
+            <div>☐ Ice-cream, candy, Cold coco.</div>
+            <div>☐ Chocolates.</div>
+            <div>☐ Artificial sweeteners like ready fruits juice.</div>
+            <div>☐ Sugar sweetened beverages like soft drink, fruit drink, sports drinks etc.</div>
+            <div>☐ Alcoholic beverages like red bulls.</div>
+          </div>
+        </div>
+
+        <div className="print-footer mt-12">Prepared by Shobhana Thakkar · Aahar Jeevan · 9687491796</div>
       </div>
 
       <AlertDialog open={blocker.status === 'blocked'} onOpenChange={(o) => !o && blocker.reset?.()}>
